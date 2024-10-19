@@ -1,24 +1,23 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import GestureGallery from './components/GestureGallery';
+import Login from './components/Login';
+import Register from './components/Register';
+import Landing from './components/Landing';
+import Settings from './components/Settings';
+import ProtectedRoute from './components/ProtectedRoute';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <Routes>
+        <Route path="/" element={<GestureGallery />} />
+        <Route path="/login" element={<Login />} />
+        <Route path="/register" element={<Register />} />
+        <Route path="/landing" element={<ProtectedRoute element={<Landing />} />} />
+        <Route path="/settings" element={<ProtectedRoute element={<Settings />} />} />
+      </Routes>
+    </Router>
   );
 }
 

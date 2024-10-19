@@ -1,0 +1,117 @@
+/* Settings.css */
+
+/* General container styling */
+.settings-container {
+    padding: 0; /* Fill the width */
+    background-color: #f9f9f9;
+    min-height: 100vh; /* Ensures footer stays at the bottom */
+    display: flex;
+    flex-direction: column;
+    margin: 0; /* Remove default margin */
+  }
+  
+  /* Navigation bar styling */
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #00fef1;
+    color: white;
+    padding: 10px 20px;
+    position: fixed; /* Fixes navbar to the top */
+    top: 0; /* Positions it at the top of the page */
+    width: 100%; /* Ensures it spans the full width */
+    z-index: 1000; /* Keeps navbar above other elements */
+  }
+  
+  .navbar h2 {
+    margin: 0;
+  }
+  
+  .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+  }
+  
+  .nav-links li {
+    display: inline;
+  }
+  
+  .nav-links a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .nav-links a:hover {
+    color: #ff9800;
+  }
+  
+  /* Settings content styling */
+  .settings-content {
+    margin: 80px 20px 20px; /* Outer margin, with space for fixed navbar */
+    padding: 20px; /* Inner padding */
+    background-color: #fff; /* White background for content */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Added shadow for depth */
+  }
+  
+  /* Form group styling */
+  .form-group {
+    margin-bottom: 15px;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  /* Button styling */
+  .save-button {
+    padding: 10px 15px;
+    background-color: #ff9800;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .save-button:hover {
+    background-color: #e68900; /* Darken button on hover */
+  }
+  
+  /* Footer styling */
+  .footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0; /* Reduced padding for a smaller footer */
+    margin-top: auto; /* Pushes footer to the bottom of the container */
+    width: 100%; /* Ensures the footer spans the full width */
+    position: relative; /* Allows footer to sit in the flow of the document */
+  }
+  
+  .footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .footer-link {
+    color: white;
+    text-decoration: none;
+    margin-top: 5px;
+  }
+  
+  .footer-link:hover {
+    color: #ff9800;
+  }
+  

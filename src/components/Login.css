@@ -1,0 +1,115 @@
+/* Login.css */
+
+.login-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* Full height */
+}
+
+.navbar {
+  background-color: #333;
+  color: white;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+}
+
+.nav-links li {
+  margin-left: 20px;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+}
+
+.login-content {
+  display: flex;
+  flex: 1; /* Take up available space */
+  padding: 20px;
+}
+
+.image-section {
+  flex: 1; /* Take up half the width */
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center align items */
+  justify-content: center; /* Center vertically */
+}
+
+.form-section {
+  flex: 1; /* Take up half the width */
+  display: flex;
+  align-items: center; /* Center vertically */
+  justify-content: center; /* Center horizontally */
+}
+
+.form-box {
+  background: #ffffff; /* White background for the form box */
+  border: 1px solid #ccc; /* Light grey border */
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  padding: 40px; /* Increased padding for a larger box */
+  max-width: 800px; /* Increased max width */
+  width: 100%; /* Full width of the container */
+  min-height: 400px; /* Increased minimum height */
+}
+
+
+
+.default-login-image {
+  width: 80%; /* Adjust as needed */
+  max-width: 300px; /* Optional max width */
+  height: auto; /* Maintain aspect ratio */
+}
+
+h1, h2 {
+  color: #333; /* Darker text color */
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+input[type="email"],
+input[type="password"] {
+  width: 100%; /* Use full width of the container */
+  padding: 12px; /* Increased padding for a larger box */
+  border: 1px solid #ccc; /* Add border styling */
+  border-radius: 4px; /* Optional: add rounded corners */
+  font-size: 16px; /* Increase font size */
+}
+
+.error-message {
+  color: red;
+}
+
+.aside {
+  margin-top: 10px;
+}
+
+.login-button {
+  padding: 10px 15px; /* Add some padding */
+  background-color: #333; /* Button background */
+  color: white; /* Button text color */
+  border: none; /* Remove border */
+  border-radius: 5px; /* Optional: rounded corners */
+  cursor: pointer; /* Change cursor on hover */
+  transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.login-button:hover {
+  background-color: #555; /* Darker shade on hover */
+}
+
+.footer {
+  text-align: center;
+  padding: 10px;
+  background-color: #f1f1f1; /* Light background */
+}

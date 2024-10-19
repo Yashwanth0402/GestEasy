@@ -1,0 +1,116 @@
+/* Register.css */
+.register-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* Ensure the container takes the full height of the viewport */
+}
+
+.navbar {
+  background-color: #00fef1; /* Same color as the navbar in Login.js */
+  color: white;
+  width: 100%;
+  padding: 10px 20px;
+  display: flex; /* Use flexbox to align items */
+  justify-content: space-between; /* Space out the title and links */
+  align-items: center; /* Center items vertically */
+  position: fixed; /* Keep the navbar fixed at the top */
+  top: 0;
+  left: 0;
+  z-index: 1000; /* Ensure it stays above other elements */
+}
+
+.nav-links {
+  list-style: none; /* Remove default list styles */
+  margin: 0; /* Remove default margin */
+  padding: 0; /* Remove default padding */
+  display: flex; /* Display links in a row */
+  flex-wrap: wrap; /* Allow links to wrap if there isn't enough space */
+}
+
+.nav-links li {
+  margin: 0 15px; /* Add spacing between links */
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none; /* Remove underline from links */
+  padding: 8px 12px; /* Add padding for better click area */
+}
+
+.nav-links a:hover {
+  background-color: rgba(255, 255, 255, 0.2); /* Light hover effect */
+  border-radius: 4px; /* Rounded corners on hover */
+}
+
+/* Adjust margin for the main content to prevent overlap with the navbar */
+.register-main-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 80%;
+  margin: 80px auto 20px; /* Add top margin to prevent overlap with the navbar */
+  flex-grow: 1; /* Allow this section to grow and fill available space */
+}
+
+/* Left section styling */
+.register-left-section {
+  width: 50%;
+  text-align: center;
+  padding-left: 10px; /* Optional padding for better spacing */
+}
+
+.default-register-image {
+  width: 80%;
+  height: auto;
+}
+
+/* Form box styling */
+.register-form-box {
+  width: 40%;
+  background: #f8f8f8;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.form-group input {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.register-button {
+  width: 100%;
+  padding: 12px;
+  background-color: #333;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.register-button:hover {
+  background-color: #555;
+}
+
+.error-message,
+.success-message {
+  color: red;
+  margin: 10px 0;
+}
+
+/* Footer styling */
+.footer {
+  background-color: #333; /* Consistent color with the navbar */
+  color: white;
+  width: 100%;
+  padding: 15px 0;
+  text-align: center;
+  margin-top: auto; /* Push the footer to the bottom */
+}
+
+.footer p {
+  margin: 5px 0;
+}
